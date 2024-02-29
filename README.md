@@ -7,7 +7,7 @@ Each algorithm has its own folder with justfile
 
 If you have `casey/just` and `sharkdp/bat` installed, building-running-logging can be done with just recipies
 
-*Defualt Config*
+*Default Config*
 ```justfile
 # build run output
 default: build run output
