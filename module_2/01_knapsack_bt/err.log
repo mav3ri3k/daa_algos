@@ -1,0 +1,33 @@
+Take Input
+value: 1.8 weight: 3
+value: 1 weight: 2
+value: 1 weight: 2
+START 0 0
+START 3 1
+START 5 2
+sum > capacity 2.8 5
+	ans: 0 0
+END 5 2
+START 5 3
+sum > capacity 2.8 5
+	ans: 0 0
+END 5 3
+end of array 0 0
+	ans: 1.8 3
+END 3 1
+START 2 2
+START 4 3
+sum == capacity 2 4
+	ans: 2 4
+END 4 3
+end of array 0 0
+	ans: 2 4
+END 2 2
+START 2 3
+end of array 0 0
+	ans: 2 4
+END 2 3
+end of array 0 0
+	ans: 2 4
+END 0 0
+after solution 0 0
