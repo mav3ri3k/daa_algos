@@ -7,6 +7,7 @@ int n;
 int **w;
 
 void get_input() {
+	cout << "Number of vertices: ";
 	cin >> n;
 
 	w = new int*[n];
@@ -14,6 +15,7 @@ void get_input() {
 		w[i] = new int[n];
 	}
 
+	cout << "Inter graph edge matrix. For unreachable vertices, use negative number.\n";
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < n; j++) {
 			cin >> w[i][j];
@@ -93,7 +95,9 @@ int main() {
 	cerr << "Input" << endl;
 	// input negative values to show infinite
 	get_input();
+	cout << "Input:" << endl;
 	print_weights(true);
 	fwa();
+	cout << "Final distances: " << endl;
 	print_weights(false);
 }
